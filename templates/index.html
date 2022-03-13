@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craig Burke - Dojo Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+<body class="bg-dark text-warning">
+    <!-- start -- MAIN -->
+    <main class="container d-flex flex-wrap mt-4 justify-content-center">
+        <div class="container bg-secondary text-warning rounded-3 w-50">
+            <h3 class="text-center mt-2">Dojo Survey</h3>
+        </div>
+        <p class="w-100"></p>
+        
+        
+        <!-- Form Start -->
+        
+        <form action="/process" name="process" method="post">
+            <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label">Name</label>
+                <div class="row-sm-10">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="name">
+                </div>
+            </div>
+
+            <div class=" row-md-3 mt-3">
+                <label for="location" class="form-label">Location</label>
+                <select id="location" name="location" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Norman, OK</option>
+                    <option>Fairbanks, AK</option>
+                    <option>Richmond, VA</option>
+                    <option>Chicago, IL</option>
+                </select>
+            </div>
+
+            <div class="row-md-3 mt-3">
+                <label for="language" class="form-label">Favorite Language</label>
+                <select id="language" name="language" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>C++</option>
+                    <option>JAVA</option>
+                </select>
+            </div>
+            
+        <p class="w-100"></p>
+
+            <div class="row mb-3 mt-3">
+                <label for="comments" class="row-sm-2 col-form-label">Comments</label>
+
+                <div class="row-sm-10">
+                    <textarea name="comments" id="comments" cols="30" rows="10" class="form-control" placeholder="Add your comments here..."></textarea>
+                </div>
+            </div>
+
+
+
+
+            <fieldset name="mac-pc" class="col mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Mac or PC</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mac-pc" id="mac-pc1" value="Mac" checked>
+                        <label class="form-check-label" for="mac-pc1">Mac</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mac-pc" id="mac-pc2" value="PC">
+                        <label class="form-check-label" for="mac-pc2">
+                            PC
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+
+
+            <div class="col mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                        <input class="form-check-input" name="rzmeeting" type="checkbox">
+                        <label class="form-check-label" for="rzmeeting">
+                            Request Zoom Meeting
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="nminfo" type="checkbox">
+                        <label class="form-check-label" for="nminfo">
+                            Need More Information
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="linstruct" type="checkbox"">
+                        <label class="form-check-label" for="linstruct">
+                            Local Instruction
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Form End -->
+
+        <p class="w-100"></p>
+
+    </main>
+    <!-- end -- MAIN -->
+</body>
+
+</html>
